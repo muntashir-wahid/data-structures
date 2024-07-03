@@ -1,0 +1,9 @@
+.**/
+build-Debug
+**.workspace
+**.json
+Makefile
+**/*.mk
+**/*.project
+**/*.clangd
+**/*.clang-format
