@@ -21,13 +21,18 @@ int main()
     graph.addEdge("A", "B", 4);
     graph.addEdge("A", "C", 2);
     graph.addEdge("B", "D", 3);
+    graph.addEdge("B", "X", 10);
     graph.addEdge("B", "E", 3);
     graph.addEdge("C", "D", 2);
+    graph.addEdge("C", "Y", 20);
     graph.addEdge("C", "F", 4);
     graph.addEdge("D", "F", 1);
     graph.addEdge("E", "F", 1);
+    graph.addEdge("E", "Z", 30);
     
-    graph.breadthFirstTraversel("A");
+//    graph.breadthFirstTraversal("D");
+
+    graph.depthFirstTraversalRec("X");
     
 
 	cout << endl;

@@ -14,6 +14,7 @@ class WeightedGraph
 private:
     unordered_map<string, vector<pair<string, int>>> adjacencyList;
     int vertexCount;
+    
 public:
     WeightedGraph();
     
@@ -21,7 +22,8 @@ public:
     int getVertexNumber() const;
     void addEdge(string, string, int);
     void showConnections();
-    void breadthFirstTraversel(string);
+    void breadthFirstTraversal(string);
+    void depthFirstTraversalRec(string);
 };
 
 #endif // _WEIGHTED_GRAPH_H_

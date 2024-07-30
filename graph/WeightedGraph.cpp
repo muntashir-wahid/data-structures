@@ -46,7 +46,7 @@ void WeightedGraph::showConnections() {
     }
 }
 
-void WeightedGraph::breadthFirstTraversel(string startVertex) {
+void WeightedGraph::breadthFirstTraversal(string startVertex) {
     unordered_map<string, bool> visited;
     queue<string> vertexQueue;
     string currVertex;
@@ -70,6 +70,23 @@ void WeightedGraph::breadthFirstTraversel(string startVertex) {
                 vertexQueue.push(neighbor);
                 visited[neighbor] = true;
             }
+        }
+    }
+}
+
+
+void WeightedGraph::depthFirstTraversalRec(string start) {
+    static unordered_map<string, bool> visited;
+    
+    size_t neighborCount = this->adjacencyList[start].size();
+    
+    cout << start << endl;
+    visited[start] = true;
+    
+    for(size_t i = 0; i < neighborCount; i++) {
+        string neighbor = this->adjacencyList[start][i].first;
+        if(!visited[neighbor]) {
+            depthFirstTraversalRec(neighbor);
         }
     }
 }
