@@ -32,7 +32,7 @@ int main()
     
 //    graph.breadthFirstTraversal("D");
 
-    graph.depthFirstTraversalRec("X");
+    graph.depthFirstTraversalIte("A");
     
 
 	cout << endl;

@@ -24,6 +24,7 @@ public:
     void showConnections();
     void breadthFirstTraversal(string);
     void depthFirstTraversalRec(string);
+    void depthFirstTraversalIte(string);
 };
 
 #endif // _WEIGHTED_GRAPH_H_
